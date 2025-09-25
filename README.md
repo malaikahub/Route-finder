@@ -15,8 +15,7 @@ Unlike traditional route planners, this system integrates **hazard awareness, re
 ### 🚦 Route Finder
 - Click on the map to select **Start Point** and **End Point**.  
 - A straight polyline route is automatically drawn.  
-- **Traffic congestion colors**:  
-  - 🟢 Green → Light traffic  
+- **Traffic congestion colors**:   
   - 🟠 Orange → Medium traffic  
   - 🔴 Red → Heavy traffic  
 - **Reset button** to clear the map and select new points.  

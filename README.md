@@ -107,3 +107,26 @@ Unlike traditional route planners, this system integrates **hazard awareness, re
    ```bash
    git clone https://github.com/yourusername/smart-route-hazard-finder.git
    cd smart-route-hazard-finder
+
+Install frontend dependencies:
+
+    cd frontend
+    npm install
+    npm start
+
+
+Run Flask backend:
+
+    cd backend
+    pip install -r requirements.txt
+    python app.py
+
+
+Open browser at:
+
+    http://localhost:3000
+
+<img width="1581" height="769" alt="image" src="https://github.com/user-attachments/assets/72fbd62b-a897-4361-bb31-7837f0b2e42c" />
+
+
+

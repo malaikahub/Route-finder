@@ -1,0 +1,76 @@
+/* Transparent Navbar with #00a79d tint */
+.navbar {
+  padding: 12px 40px;
+  background: rgba(2, 116, 97, 0.3); /* light transparent tint */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: rgb(0, 0, 0);
+  position: fixed; /* Stick at top */
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  backdrop-filter: blur(6px); /* Glass effect */
+}
+
+/* Logo + text */
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.navbar-logo img {
+  height: 45px;
+  width: auto;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.navbar-logo img:hover {
+  transform: scale(1.05);
+}
+
+.logo-text {
+  font-size: 20px;
+  font-weight: 700;
+  color: rgb(0, 0, 0);
+  letter-spacing: 0.5px;
+}
+
+/* Links container */
+.navbar-links {
+  display: flex;
+  gap: 25px;
+}
+
+/* Each link */
+.nav-link {
+  position: relative;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 16px;
+  padding: 5px 0;
+  transition: color 0.3s ease;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background-color: #00a79d;
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #00a79d;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}

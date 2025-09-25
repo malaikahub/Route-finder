@@ -1,0 +1,254 @@
+/* ---------------------- */
+/* Testimonial Section    */
+/* ---------------------- */
+.testimonial-section {
+  text-align: center;
+  padding: 80px 20px;
+  background-color: #f1fafa; /* soft teal bg */
+}
+
+.testimonial-card {
+  background: #fff;
+  padding: 40px 30px;
+  border-radius: 20px;
+  box-shadow: 0 6px 15px rgba(0, 128, 128, 0.1);
+  max-width: 800px;
+  margin: 0 auto 60px auto;
+}
+
+.testimonial-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #444;
+  margin-bottom: 10px;
+}
+
+.testimonial-highlight {
+  color: #009688; /* teal highlight */
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.testimonial-text {
+  font-size: 1.05rem;
+  color: #333;
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+.testimonial-author {
+  font-size: 1rem;
+  color: #444;
+  font-style: italic;
+}
+
+/* Partner Logos */
+.partner-logos {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  align-items: center;
+}
+
+.partner-logos img {
+  max-height: 50px;
+  filter: grayscale(100%); /* sleek muted look */
+  opacity: 0.8;
+  transition: all 0.3s ease;
+}
+
+.partner-logos img:hover {
+  filter: grayscale(0%);
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+/* ================= ABOUT SECTION ================= */
+.about-section {
+  background: #f9fafb;
+  padding: 80px 20px;
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+.about-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.about-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #009688;
+  margin-bottom: 20px;
+}
+
+.about-intro {
+  font-size: 1.1rem;
+  color: #000; /* Black text */
+  margin-bottom: 40px;
+  line-height: 1.7;
+}
+
+.safe-text {
+  color: #28a745;
+  font-weight: 600;
+}
+
+.fast-text {
+  color: #ff9800;
+  font-weight: 600;
+}
+
+/* Features Section */
+.sub-heading {
+  font-size: 1.8rem;
+  color: #000; /* Black text */
+  font-weight: 600;
+  margin: 40px 0 30px 0;
+  text-transform: uppercase;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+}
+
+.feature-card {
+  background: #fff;
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0 6px 16px rgba(0, 128, 128, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: slideUp 0.8s ease forwards;
+}
+
+.feature-card h4 {
+  color: #000; /* Black text */
+  margin-bottom: 10px;
+}
+
+.feature-card p {
+  color: #000; /* Black text */
+  font-size: 0.95rem;
+}
+
+.feature-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0, 128, 128, 0.2);
+}
+
+.feature-icon {
+  font-size: 2rem;
+  color: #009688;
+  margin-bottom: 15px;
+  animation: pulse 2s infinite;
+}
+
+.hazard-icon {
+  color: #e53935;
+}
+
+.traffic-icon {
+  color: #ff9800;
+}
+
+.time-icon {
+  color: #3f51b5;
+}
+
+.map-icon {
+  color: #4caf50;
+}
+
+.security-icon {
+  color: #673ab7;
+}
+
+.data-icon {
+  color: #2196f3;
+}
+
+/* Usage Steps */
+.usage-steps {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  text-align: left;
+}
+
+.step-box {
+  background: #ffffff;
+  padding: 15px 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 128, 128, 0.08);
+  font-size: 1rem;
+  color: #000; /* Black text */
+  transition: transform 0.3s ease;
+  animation: fadeSlide 1s ease-in-out;
+}
+
+.step-box:hover {
+  transform: scale(1.03);
+  background: #f1fafa;
+}
+
+.high-risk {
+  color: #e53935;
+  font-weight: bold;
+}
+
+.medium-risk {
+  color: #ff9800;
+  font-weight: bold;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.15);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes fadeSlide {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

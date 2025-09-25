@@ -1,0 +1,180 @@
+.contact-section {
+  background-color: #f3fbfc;
+  padding: 60px 50px; /* padding around section */
+  margin-top: 48px; /* ~3 cm below navbar */
+}
+
+.contact-heading {
+  text-align: center;
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 40px;
+  color: #222;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+  flex-wrap: wrap;
+  max-width: 1100px;
+  margin: 0 auto; /* center content */
+}
+
+/* Left Side */
+.contact-left {
+  flex: 1;
+  min-width: 280px;
+}
+
+.contact-left ul {
+  list-style: none;
+  padding: 0;
+}
+
+.contact-left ul li {
+  font-size: 16px;
+  margin-bottom: 14px;
+  color: #333;
+}
+
+/* Right Side */
+.contact-right {
+  flex: 1;
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  min-width: 320px;
+}
+
+.contact-right form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-right label {
+  font-size: 14px;
+  margin: 8px 0 4px;
+  color: #555;
+}
+
+.contact-right input,
+.contact-right textarea {
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 14px;
+  margin-bottom: 15px;
+  background: #f5f5f5;
+}
+
+.contact-right textarea {
+  resize: none;
+  height: 100px;
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  font-size: 13px;
+  color: #666;
+}
+
+.checkbox input {
+  margin-right: 8px;
+}
+
+.checkbox a {
+  color: #0077ff;
+  text-decoration: none;
+}
+
+.checkbox a:hover {
+  text-decoration: underline;
+}
+
+/* Button */
+.contact-right button {
+  padding: 12px;
+  background: #e94e64;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.contact-right button:hover {
+  background: #d43f54;
+}
+
+/* ---------------------- */
+/* Testimonial Section    */
+/* ---------------------- */
+.testimonial-section {
+  text-align: center;
+  padding: 80px 20px;
+  background-color: #f1fafa; /* soft teal bg */
+}
+
+.testimonial-card {
+  background: #fff;
+  padding: 40px 30px;
+  border-radius: 20px;
+  box-shadow: 0 6px 15px rgba(0, 128, 128, 0.1);
+  max-width: 800px;
+  margin: 0 auto 60px auto;
+}
+
+.testimonial-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #444;
+  margin-bottom: 10px;
+}
+
+.testimonial-highlight {
+  color: #009688; /* teal highlight */
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.testimonial-text {
+  font-size: 1.05rem;
+  color: #333;
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+.testimonial-author {
+  font-size: 1rem;
+  color: #444;
+  font-style: italic;
+}
+
+/* Partner Logos */
+.partner-logos {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  align-items: center;
+}
+
+.partner-logos img {
+  max-height: 50px;
+  filter: grayscale(100%); /* sleek muted look */
+  opacity: 0.8;
+  transition: all 0.3s ease;
+}
+
+.partner-logos img:hover {
+  filter: grayscale(0%);
+  opacity: 1;
+  transform: scale(1.1);
+}
